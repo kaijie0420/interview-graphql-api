@@ -7,3 +7,5 @@ You may copy from .env.example.
 
 ### How to start
 Run `npm start` to start the server.
+
+To use the GraphiQL tool, navigate to http://localhost:4000/graphql.
