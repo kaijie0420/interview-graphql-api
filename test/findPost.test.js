@@ -17,7 +17,6 @@ describe('GraphQL query findPost', () => {
       .send({ query: '{ findPost(id: 1) { userId id title body } }' })
       .expect(200)
       .end((err, res) => {
-        console.log(res.body)
           if (err) return done(err);
           const post = res.body.data.findPost;
           assert.equal(post.userId, 1);
